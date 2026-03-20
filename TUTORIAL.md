@@ -1,13 +1,5 @@
 # SpengerBite CSS-Architektur: Tutorial
 
-## Einleitung
-
-Wir bauen das CSS-Fundament für **SpengerBite**, eine Food-Delivery-App (ähnlich Foodora).   
-In diesem Tutorial lernst du die **CSS-Architektur** hinter einem modernen React-Projekt: von Design Tokens über Tailwind CSS bis hin zu CSS Modules und Dark Mode.
-
-Das fertige Referenzprojekt mit **Storybook** findest du in diesem Repository.  
-Dort kannst du jede Komponente inspizieren, den Source Code kopieren und live testen.
-
 ### Storybook starten
 
 Bevor du mit dem Tutorial beginnst, starte das Storybook im Referenzprojekt. So kannst du jederzeit nachschauen, wie die fertigen Komponenten aussehen:
