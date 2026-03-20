@@ -1,0 +1,9 @@
+@reference "../../styles/globals.css";
+
+.appShell {
+  @apply flex min-h-screen flex-col;
+}
+
+.main {
+  @apply mx-auto w-full max-w-container-lg flex-1 p-6;
+}

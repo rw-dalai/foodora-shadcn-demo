@@ -1,0 +1,11 @@
+/* ─────────────────────────────────────────────
+   Typography Tokens
+   Mapped in globals.css → text-heading, text-subheading, etc.
+   ───────────────────────────────────────────── */
+
+:root {
+  --text-heading:    1.5rem;   /* 24px — page titles            */
+  --text-subheading: 1.125rem; /* 18px — section titles          */
+  --text-body:       0.875rem; /* 14px — default body text       */
+  --text-caption:    0.75rem;  /* 12px — small labels, badges    */
+}

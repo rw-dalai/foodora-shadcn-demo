@@ -1,0 +1,13 @@
+@reference "../../styles/globals.css";
+
+.sideNav {
+  @apply flex flex-col gap-6;
+}
+
+.nav {
+  @apply flex flex-col gap-1;
+}
+
+.navItem {
+  @apply justify-start gap-3 text-sm font-medium;
+}

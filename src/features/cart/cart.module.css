@@ -1,0 +1,65 @@
+@reference "../../styles/globals.css";
+
+.cartPanel {
+  @apply flex h-full flex-col;
+}
+
+.cartHeader {
+  @apply flex items-center justify-between p-6;
+}
+
+.cartItems {
+  @apply flex flex-1 flex-col gap-4 overflow-y-auto px-6 py-4;
+}
+
+.cartItem {
+  @apply flex items-center justify-between gap-4 rounded-lg border p-3;
+}
+
+.itemInfo {
+  @apply flex flex-1 gap-3;
+}
+
+.itemImage {
+  @apply h-14 w-14 rounded-md object-cover;
+}
+
+.itemDetails {
+  @apply flex flex-col justify-center;
+}
+
+.itemName {
+  @apply text-sm font-medium;
+}
+
+.itemPrice {
+  @apply text-sm text-muted-foreground;
+}
+
+.itemActions {
+  @apply flex flex-col items-end gap-2;
+}
+
+.quantityControl {
+  @apply flex items-center gap-2;
+}
+
+.quantity {
+  @apply min-w-8 text-center text-sm font-medium;
+}
+
+.emptyCart {
+  @apply flex flex-1 flex-col items-center justify-center gap-4 p-8;
+}
+
+.cartSummary {
+  @apply flex flex-col gap-3 p-6;
+}
+
+.summaryRow {
+  @apply flex justify-between text-sm;
+}
+
+.summaryTotal {
+  @apply flex justify-between text-lg font-semibold;
+}

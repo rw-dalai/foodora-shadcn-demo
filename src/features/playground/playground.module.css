@@ -1,0 +1,22 @@
+@reference "../../styles/globals.css";
+
+.playground {
+  @apply mx-auto flex flex-col gap-8 p-8;
+  max-width: 1024px;
+}
+
+.header {
+  @apply flex items-center justify-between;
+}
+
+.section {
+  @apply flex flex-col gap-6;
+}
+
+.grid {
+  @apply flex flex-wrap items-center gap-4;
+}
+
+.formGrid {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+}

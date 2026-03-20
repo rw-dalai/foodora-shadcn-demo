@@ -1,0 +1,64 @@
+/* ─────────────────────────────────────────────
+   Color Tokens — based on foodora public brand assets
+   Primary reference: #D60265
+   ───────────────────────────────────────────── */
+
+:root {
+  --primary:            332 98% 42%;    /* #D60265 — brand pink */
+  --primary-foreground: 0 0% 100%;
+
+  --accent:            332 100% 96%;
+  --accent-foreground: 332 70% 20%;
+
+  --background:        0 0% 100%;
+  --foreground:        240 10% 4%;
+
+  --card:              0 0% 100%;
+  --card-foreground:   240 10% 4%;
+
+  --popover:            0 0% 100%;
+  --popover-foreground: 240 10% 4%;
+
+  --secondary:            220 13% 95%;
+  --secondary-foreground: 240 10% 4%;
+
+  --muted:            220 13% 95%;
+  --muted-foreground: 220 8% 38%;
+
+  --destructive:            0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 220 13% 91%;
+  --input:  220 13% 91%;
+  --ring:   332 98% 42%;
+}
+
+.dark {
+  --primary:            332 90% 55%;
+  --primary-foreground: 240 10% 6%;
+
+  --accent:            332 45% 18%;
+  --accent-foreground: 0 0% 98%;
+
+  --background:        240 10% 6%;
+  --foreground:        0 0% 98%;
+
+  --card:              240 10% 8%;
+  --card-foreground:   0 0% 98%;
+
+  --popover:            240 10% 8%;
+  --popover-foreground: 0 0% 98%;
+
+  --secondary:            240 5% 17%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted:            240 5% 20%;
+  --muted-foreground: 240 5% 65%;
+
+  --destructive:            0 63% 31%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 240 5% 20%;
+  --input:  240 5% 20%;
+  --ring:   332 90% 55%;
+}

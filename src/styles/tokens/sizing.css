@@ -1,0 +1,26 @@
+/* ─────────────────────────────────────────────
+   Sizing Tokens — icons, controls, containers
+   Mapped in globals.css → size-icon-sm, h-control-md, max-w-container-lg, etc.
+   ───────────────────────────────────────────── */
+
+:root {
+  /* ── Icon sizes ── */
+  --icon-xs: 0.75rem;   /* 12px — CartItem +/- icons           */
+  --icon-sm: 1rem;      /* 16px — inline icons (eye, search)    */
+  --icon-md: 1.25rem;   /* 20px — nav icons, card title icons   */
+  --icon-lg: 3rem;      /* 48px — empty-state illustration      */
+
+  /* ── Button / input heights ── */
+  --control-sm: 2rem;     /* 32px — small buttons    */
+  --control-md: 2.25rem;  /* 36px — default buttons & inputs */
+  --control-lg: 2.5rem;   /* 40px — large buttons    */
+
+  /* ── Avatar sizes ── */
+  --avatar-sm: 2rem;   /* 32px — nav avatar       */
+  --avatar:    2.5rem; /* 40px — default avatar   */
+
+  /* ── Container max-widths ── */
+  --container-sm: 28rem;  /* 448px — auth cards   */
+  --container-md: 48rem;  /* 768px — checkout     */
+  --container-lg: 80rem;  /* 1280px — app shell   */
+}

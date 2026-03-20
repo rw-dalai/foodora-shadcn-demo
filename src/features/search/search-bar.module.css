@@ -1,0 +1,31 @@
+@reference "../../styles/globals.css";
+
+.searchBar {
+  @apply flex w-full flex-col gap-3;
+}
+
+@media (min-width: 768px) {
+  .searchBar {
+    @apply flex-row items-center;
+  }
+}
+
+.inputGroup {
+  @apply relative flex-1;
+}
+
+.searchIcon {
+  @apply pointer-events-none absolute left-3 top-1/2 size-icon-sm -translate-y-1/2 text-muted-foreground;
+}
+
+.input {
+  padding-left: 2.5rem;
+}
+
+.clearButton {
+  @apply absolute right-0 top-1/2 -translate-y-1/2;
+}
+
+.submitButton {
+  @apply shrink-0;
+}

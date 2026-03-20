@@ -1,0 +1,11 @@
+@reference "../../styles/globals.css";
+
+.bottomSheet {
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.content {
+  @apply pt-4;
+}

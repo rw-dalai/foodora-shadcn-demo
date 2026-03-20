@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* ── Token files (by concern) ── */
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/sizing.css";
+@import "./tokens/radius.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ── Map design tokens → Tailwind utilities ──
+   @theme inline MUST live here (the file with @import "tailwindcss").
+   Token files above define :root / .dark CSS custom properties.
+   This block turns them into Tailwind utility classes. */
+
+@theme inline {
+  /* Colors → bg-primary, text-foreground, border-border, etc. */
+  --color-background:          hsl(var(--background));
+  --color-foreground:          hsl(var(--foreground));
+
+  --color-card:                hsl(var(--card));
+  --color-card-foreground:     hsl(var(--card-foreground));
+
+  --color-popover:             hsl(var(--popover));
+  --color-popover-foreground:  hsl(var(--popover-foreground));
+
+  --color-primary:             hsl(var(--primary));
+  --color-primary-foreground:  hsl(var(--primary-foreground));
+
+  --color-secondary:             hsl(var(--secondary));
+  --color-secondary-foreground:  hsl(var(--secondary-foreground));
+
+  --color-accent:              hsl(var(--accent));
+  --color-accent-foreground:   hsl(var(--accent-foreground));
+
+  --color-muted:               hsl(var(--muted));
+  --color-muted-foreground:    hsl(var(--muted-foreground));
+
+  --color-destructive:             hsl(var(--destructive));
+  --color-destructive-foreground:  hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input:  hsl(var(--input));
+  --color-ring:   hsl(var(--ring));
+
+  /* Border radius → rounded-lg, rounded-md, rounded-sm */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Typography → text-heading, text-subheading, text-body, text-caption */
+  --font-size-heading:    var(--text-heading);
+  --font-size-subheading: var(--text-subheading);
+  --font-size-body:       var(--text-body);
+  --font-size-caption:    var(--text-caption);
+
+  /* Icon sizes → size-icon-xs, size-icon-sm, size-icon-md, size-icon-lg */
+  --spacing-icon-xs: var(--icon-xs);
+  --spacing-icon-sm: var(--icon-sm);
+  --spacing-icon-md: var(--icon-md);
+  --spacing-icon-lg: var(--icon-lg);
+
+  /* Control heights → h-control-sm, h-control-md, h-control-lg */
+  --spacing-control-sm: var(--control-sm);
+  --spacing-control-md: var(--control-md);
+  --spacing-control-lg: var(--control-lg);
+
+  /* Avatar sizes → size-avatar-sm, size-avatar */
+  --spacing-avatar-sm: var(--avatar-sm);
+  --spacing-avatar:    var(--avatar);
+
+  /* Container widths → max-w-container-sm, max-w-container-md, max-w-container-lg */
+  --max-width-container-sm: var(--container-sm);
+  --max-width-container-md: var(--container-md);
+  --max-width-container-lg: var(--container-lg);
+}
+
+/* ── Base layer ── */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

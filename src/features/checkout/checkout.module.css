@@ -1,0 +1,17 @@
+@reference "../../styles/globals.css";
+
+.checkoutForm {
+  @apply mx-auto flex max-w-container-md flex-col gap-6;
+}
+
+.cardGrid {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+}
+
+.field {
+  @apply flex flex-col gap-2;
+}
+
+.fieldFull {
+  @apply flex flex-col gap-2 sm:col-span-2;
+}

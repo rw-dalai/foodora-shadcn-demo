@@ -1,0 +1,35 @@
+@reference "../../styles/globals.css";
+
+.topNav {
+  @apply sticky top-0 z-40 w-full border-b bg-background;
+}
+
+.container {
+  @apply mx-auto flex max-w-container-lg items-center justify-between gap-4 px-4 py-3;
+}
+
+.menuButton {
+  @apply flex md:hidden;
+}
+
+.logo {
+  @apply flex items-center;
+}
+
+.searchDesktop {
+  @apply hidden flex-1 md:flex;
+  max-width: 32rem;
+}
+
+.searchMobile {
+  @apply flex md:hidden;
+}
+
+.actions {
+  @apply flex items-center gap-2;
+}
+
+.cartBadge {
+  @apply absolute -top-1 -right-1 flex h-5 min-w-5 items-center justify-center px-1;
+  font-size: 0.625rem;
+}

@@ -1,0 +1,33 @@
+@reference "../../styles/globals.css";
+
+.authCard {
+  @apply mx-auto w-full max-w-container-sm;
+}
+
+.form {
+  @apply flex flex-col gap-4;
+}
+
+.field {
+  @apply flex flex-col gap-2;
+}
+
+.inputWrapper {
+  @apply relative;
+}
+
+.inputIcon {
+  @apply pointer-events-none absolute left-3 top-1/2 z-10 size-icon-sm -translate-y-1/2 text-muted-foreground;
+}
+
+.inputWithIcon {
+  padding-left: 2.5rem;
+}
+
+.togglePassword {
+  @apply absolute right-0 top-1/2 -translate-y-1/2;
+}
+
+.switchForm {
+  @apply text-center text-sm text-muted-foreground;
+}

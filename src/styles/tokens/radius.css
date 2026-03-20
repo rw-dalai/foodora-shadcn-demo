@@ -1,0 +1,8 @@
+/* ─────────────────────────────────────────────
+   Border-Radius Tokens
+   Mapped in globals.css → rounded-lg, rounded-md, rounded-sm
+   ───────────────────────────────────────────── */
+
+:root {
+  --radius: 1rem;
+}
