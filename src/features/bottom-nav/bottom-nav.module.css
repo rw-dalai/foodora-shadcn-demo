@@ -1,0 +1,31 @@
+@reference "../../styles/globals.css";
+
+.bottomNav {
+  @apply fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-background md:hidden;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.navList {
+  @apply flex items-center justify-around;
+}
+
+.navItem {
+  @apply flex flex-col items-center gap-0.5 px-2 py-2 text-xs text-muted-foreground
+         transition-colors cursor-pointer rounded-lg;
+}
+
+.navItem:hover {
+  @apply text-foreground bg-accent;
+}
+
+.navItem:active {
+  @apply scale-95;
+}
+
+.navItem:focus-visible {
+  @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+}
+
+.navItemActive {
+  @apply text-primary;
+}

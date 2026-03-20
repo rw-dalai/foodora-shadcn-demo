@@ -2,6 +2,7 @@ import { useState } from "react"
 import { TopNavBar } from "@/features/top-nav/TopNavBar"
 import { SideNavBar } from "@/features/side-nav/SideNavBar"
 import { ShoppingCart } from "@/features/cart/ShoppingCart"
+import { BottomNavBar } from "@/features/bottom-nav/BottomNavBar"
 import s from "./app-shell.module.css"
 
 const demoCartItems = [
@@ -44,6 +45,7 @@ export function AppShell({ children }) {
         items={demoCartItems}
       />
       <main className={s.main}>{children}</main>
+      <BottomNavBar cartCount={cartCount} />
     </div>
   )
 }

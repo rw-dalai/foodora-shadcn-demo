@@ -1,9 +1,0 @@
-@reference "../../styles/globals.css";
-
-.mobileShell {
-  @apply flex min-h-screen flex-col;
-}
-
-.main {
-  @apply flex-1 p-4;
-}
